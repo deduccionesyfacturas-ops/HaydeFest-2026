@@ -3,68 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HaydeFest 2026 - Check-In</title>
+    <title>¡Bienvenid@ al HaydeFest 2026!</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e1e2f 0%, #111119 100%);
-            color: #ffffff;
+            background-color: #0b0b16; /* Color oscuro que combina con los fuegos artificiales de fondo */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-family: sans-serif;
         }
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 40px 30px;
-            max-width: 400px;
+        .contenedor-imagen {
             width: 100%;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-            animation: fadeIn 0.8s ease-out;
+            max-width: 600px; /* Tamaño óptimo para pantallas de celular */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .icon {
-            font-size: 64px;
-            margin-bottom: 20px;
-            animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px; /* Bordes suaves y estéticos */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Sombra elegante */
+            animation: aparecer 1s ease-out;
         }
-        h1 {
-            font-size: 24px;
-            font-weight: 600;
-            color: #4cd137;
-            margin-bottom: 15px;
-        }
-        p {
-            font-size: 20px;
-            color: #f5f6fa;
-            line-height: 1.4;
-            font-weight: 500;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes scaleUp {
-            from { transform: scale(0); }
-            to { transform: scale(1); }
+        @keyframes aparecer {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="icon">✅</div>
-        <h1>Check In Realizado con éxito</h1>
-        <p>¡Bienvenid@ al HaydeFest 2026!</p>
+    <div class="contenedor-imagen">
+        <!-- Vincula la imagen que subiste al repositorio -->
+        <img src="viaje-haydefest.png" alt="Check In Exitoso - HaydeFest 2026">
     </div>
 
 </body>
